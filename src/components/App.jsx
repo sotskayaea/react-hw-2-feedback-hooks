@@ -29,7 +29,7 @@ const App = () => {
     const positivePercentage = (value.good * 100) / countTotalFeedback();
     return Math.round(positivePercentage);
   };
-  const { bad, good, neutral } = value;
+
   return (
     <>
       <Section
