@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { useState } from 'react';
 import Section from './Section/Section.jsx';
 
@@ -34,9 +34,9 @@ const App = () => {
     <>
       <Section
         title="Please leave feedback"
-        good={good}
-        bad={bad}
-        neutral={neutral}
+        good={value.good}
+        bad={value.bad}
+        neutral={value.neutral}
         total={countTotalFeedback()}
         onLeaveFeedback={onLeaveFeedback}
         positivePercentage={countPositiveFeedbackPercentage()}
